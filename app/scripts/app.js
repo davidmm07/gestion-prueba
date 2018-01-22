@@ -53,6 +53,21 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/cliente', {
+        templateUrl: 'views/cliente.html',
+        controller: 'ClienteCtrl',
+        controllerAs: 'cliente'
+      })
+      .when('/crear_cliente', {
+        templateUrl: 'views/crear_cliente.html',
+        controller: 'CrearClienteCtrl',
+        controllerAs: 'crearCliente'
+      })
+      .when('/editar_cliente', {
+        templateUrl: 'views/editar_cliente.html',
+        controller: 'EditarClienteCtrl',
+        controllerAs: 'editarCliente'
+      })
       .otherwise({
         redirectTo: '/'
       });

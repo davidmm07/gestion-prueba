@@ -1,0 +1,28 @@
+<br>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Listado de clientes
+    </div>
+    <div class="panel-body">
+<table class="table">
+  <tr>
+    <td><h3>Clientes</h3></td>
+    <td></td>
+  </tr>
+  <tr ng-repeat="cliente in clientes">
+    <td>{{cliente.num_cliente}}</td>
+    <td>
+      <a class="btn btn-primary" hrsref="viewcliente({id:cliente._id})">View</a>
+      <a class="btn btn-warning" hrsref="viewcliente({id:cliente._id})">Editar</a>
+      <a class="btn btn-danger"  ng-click="deletecliente(cliente)">Delete</a>
+    </td>
+  </tr>
+</table>
+<div>
+<a ui-sref="newcliente" class="btn-primary btn-lg nodecoration">Agregar Nuevo Cliente</a>
+</div>
+    </div>
+    <div class="panel-footer">
+
+    </div>
+</div>
